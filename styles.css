@@ -1,0 +1,113 @@
+/* Общие стили для всех страниц */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #27ae60;
+}
+
+.main-content, .content {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-content h1, .content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p, .content p, .content ol {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.download-btn:hover {
+    background-color: #219653;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Дополнительные стили для страницы с инструкцией */
+ol {
+    list-style: decimal;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .main-content h1, .content h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
